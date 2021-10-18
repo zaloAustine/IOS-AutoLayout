@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82BF6AA271D59B700797F53 /* ContraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82BF6A9271D59B700797F53 /* ContraintViewController.swift */; };
 		D8472F382718247B00BACF76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472F372718247B00BACF76 /* AppDelegate.swift */; };
 		D8472F3A2718247B00BACF76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472F392718247B00BACF76 /* SceneDelegate.swift */; };
 		D8472F3C2718247B00BACF76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472F3B2718247B00BACF76 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D82BF6A9271D59B700797F53 /* ContraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContraintViewController.swift; sourceTree = "<group>"; };
 		D8472F342718247B00BACF76 /* AutoLyout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLyout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8472F372718247B00BACF76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8472F392718247B00BACF76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				D8472F482718247D00BACF76 /* Info.plist */,
 				D8472F402718247B00BACF76 /* AutoLyout.xcdatamodeld */,
 				D8472F4F27183E3D00BACF76 /* DatingViewController.swift */,
+				D82BF6A9271D59B700797F53 /* ContraintViewController.swift */,
 			);
 			path = AutoLyout;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				D8472F5027183E3D00BACF76 /* DatingViewController.swift in Sources */,
 				D8472F382718247B00BACF76 /* AppDelegate.swift in Sources */,
 				D8472F3A2718247B00BACF76 /* SceneDelegate.swift in Sources */,
+				D82BF6AA271D59B700797F53 /* ContraintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

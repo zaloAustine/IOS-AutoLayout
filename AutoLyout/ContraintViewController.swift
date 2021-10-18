@@ -11,8 +11,14 @@ class ContraintViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
         
+        
+    }
+    
+    
+    private func contraints(){
+    
         let searchLabel = UILabel()
         searchLabel.translatesAutoresizingMaskIntoConstraints = false
         searchLabel.text = "Search"
@@ -30,9 +36,19 @@ class ContraintViewController: UIViewController {
         button.setTitleColor(UIColor.systemOrange, for: .normal)
         button.setTitleColor(UIColor.systemGreen, for: .highlighted)
         view.didAddSubview(button)
-
+        
+        NSLayoutConstraint(item: searchLabel, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leadingMargin, multiplier: 1.0, constant: 0.0).isActive = true
+        NSLayoutConstraint(item: searchLabel, attribute: .firstBaseline, relatedBy: .equal, toItem: textField, attribute: .firstBaseline, multiplier: 1.0, constant: 0.0).isActive = true
+        
+        
+        NSLayoutConstraint(item: view!, attribute: .trailingMargin, relatedBy: .equal, toItem: textField, attribute: .trailing, multiplier: 1.0, constant: 0.0).isActive = true
+        NSLayoutConstraint(item: textField, attribute: .top, relatedBy: .equal, toItem: view.safeAreaLayoutGuide.topAnchor, attribute: .bottom, multiplier: 1.0, constant: 20.0).isActive = true
+        NSLayoutConstraint(item: textField, attribute: .leading, relatedBy: .equal, toItem: searchLabel, attribute: .trailing, multiplier: 1.0, constant: 8.0).isActive = true
+        
+        NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal, toItem: textField, attribute: .trailing, multiplier: 1.0, constant: 0.0).isActive = true
+        
+        NSLayoutConstraint(item: button, attribute: .trailing, relatedBy: .equal, toItem: textField, attribute: .trailing, multiplier: 1.0, constant: 0.0).isActive = true
         
     }
     
-
 }

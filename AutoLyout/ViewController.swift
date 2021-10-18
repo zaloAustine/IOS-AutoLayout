@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         let firstNameLabel = UILabel()
         firstNameLabel.translatesAutoresizingMaskIntoConstraints = false
         firstNameLabel.text = "First Name"
+        firstNameLabel.setContentHuggingPriority(UILayoutPriority(rawValue: 251.0), for: .horizontal)
         view.addSubview(firstNameLabel)
        
         
@@ -73,7 +74,6 @@ class ViewController: UIViewController {
         rapperTextField.translatesAutoresizingMaskIntoConstraints = false
         rapperTextField.borderStyle = .roundedRect
         view.addSubview(rapperTextField)
-        
         
         
         let realAgeLabel = UILabel()
@@ -151,6 +151,24 @@ class ViewController: UIViewController {
 
         realAgeTextField.firstBaselineAnchor.constraint(equalTo: rapperLabel.firstBaselineAnchor).isActive = true
         realAgeTextField.topAnchor.constraint(equalTo: rapperTextField.bottomAnchor,constant: 8).isActive = true
+        
+        let margin = view.layoutMarginsGuide
+        container.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        container.leadingAnchor.constraint(equalTo: margin.leadingAnchor).isActive  = true
+        container.trailingAnchor.constraint(equalTo: margin.trailingAnchor).isActive  = true
+        
+    
+        leftButton.leadingAnchor.constraint(equalTo: margin.leadingAnchor).isActive = true
+        leftButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant: -20).isActive = true
+        
+
+        rightButton.trailingAnchor.constraint(equalTo: margin.trailingAnchor).isActive = true
+        rightButton.leadingAnchor.constraint(equalTo: leftButton.trailingAnchor,constant: 8).isActive = true
+        rightButton.bottomAnchor.constraint(equalTo: leftButton.bottomAnchor).isActive = true
+        rightButton.widthAnchor.constraint(equalTo: leftButton.widthAnchor).isActive = true
+
+        
+        
 
     }
     
